@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="tailwind.config.js"></script>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy ui -->
@@ -82,50 +83,57 @@
             </div>
         </nav>
 
-        <div class="bannerContainer h-72 relative my-14 ">
-
+        <div class="bannerContainer my-14">
 
             <!-- carousel//////////////////////////////////////////////////////// -->
-            <div class="carousel w-full relative top-0 z-10">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="./images/banner1.png" class="w-full" />
+            <div class="carousel w-full md:h-72 lg:h-96">
+                <div style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./images/banner1.png);"
+                    id="slide1" class="carousel-item relative w-full h-full flex flex-col justify-center items-center text-white  text-center bg-no-repeat bg-cover py-4">
+                    <!-- <img src="./images/banner1.png" class="w-full" /> -->
+                    <h1 class="text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="text-xs lg:text-lg">We supply highly quality organic products</p>
+                    <button class="bg-red-500 text-xl rounded-lg px-4 py-2">Shop Now</button>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="./images/banner2.png" class="w-full" />
+                <div style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./images/banner2.png); background-size: cover;"
+                    id="slide2" class="carousel-item relative w-full flex flex-col justify-center items-center text-white bg-no-repeat text-center py-4">
+                    <!-- <img src="./images/banner2.png" class="w-full" /> -->
+                    <h1 class="text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="text-xs lg:text-lg">We supply highly quality organic products</p>
+                    <button class="bg-red-500 text-xl rounded-lg px-4 py-2">Shop Now</button>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="./images/banner3.png" class="w-full" />
+                <div style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./images/banner3.png); background-size: cover;"
+                    id="slide3" class="carousel-item relative w-full flex flex-col justify-center items-center text-white bg-no-repeat text-center py-4">
+                    <!-- <img src="./images/banner3.png" class="w-full" /> -->
+                    <h1 class="text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="text-xs lg:text-lg">We supply highly quality organic products</p>
+                    <button class="bg-red-500 text-xl rounded-lg px-4 py-2 m">Shop Now</button>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="./images/banner4.png" class="w-full" />
+                <div style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./images/banner4.png); background-size: cover;"
+                    id="slide4" class="carousel-item relative w-full flex flex-col justify-center items-center text-white bg-no-repeat text-center py-4">
+                    <!-- <img src="./images/banner4.png" class="w-full" /> -->
+                    <h1 class="text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="text-xs lg:text-lg">We supply highly quality organic products</p>
+                    <button class="bg-red-500 text-xl rounded-lg px-4 py-2 m-4">Shop Now</button>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
             </div>
-
-            <div class="overBannerText flex flex-col justify-between items-center text-white relative bottom-80 z-30">
-                <h1 class="text-3xl font-bold">Exotic tastes at your doorstep</h1>
-                <p class="text-lg">We supply highly quality organic products</p>
-                <button class="bg-red-500 text-xl px-8 py-5">Shop Now</button>
-            </div>
-
-
-            <div class="flex justify-center items-center relative bottom-52 z-30">
-                <div class="underCarousel px-8 py-6 rounded-xl bg-white flex justify-between items-center w-[70%]">
+            <div class="hidden justify-center items-center relative bottom-10 z-30 lg:flex">
+                <div class="underCarousel px-8 py-6 rounded-xl bg-white flex justify-between items-center w-[70%] ">
                     <img class="h-16" src="./images/fruit1.png" alt="">
                     <img class="h-16" src="./images/fruit2.png" alt="">
                     <img class="h-16" src="./images/fruit3.png" alt="">
