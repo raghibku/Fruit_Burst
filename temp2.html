@@ -27,23 +27,23 @@
 </head>
 
 <body>
-    <nav class="lg:mx-60 mt-4">
-        <div class="flex justify-between items-center px-10 md:bg-red-500 lg:rounded-3xl">
+    <nav class="lg:mx-60">
+        <div class="navbar flex justify-between items-center px-10 lg:bg-red-500 lg:rounded-3xl">
 
             <!-- navbar start////////////////////////////////////////////////////// -->
 
 
-            <div class="start w-[60%] hidden lg:flex">
-                <ul class="w-full text-sm flex justify-between items-center ">
-                    <li class="px-4"><a>Home</a></li>
-                    <li class="px-4"><a>About</a></li>
-                    <li class="px-4"><a>Shop</a></li>
-                    <li class="px-4"><a>All-fruits</a></li>
+            <div class="navbar-start hidden w-full lg:flex">
+                <ul class="menu menu-horizontal w-full text-xs ">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All fruits</a></li>
                 </ul>
             </div>
 
             <!-- navbar center //////////////////////////////////////////////////// -->
-            <div class="flex w-full lg:w-[50%] justify-between lg:justify-center items-center">
+            <div class="navbar-center flex justify-between gap-28 items-center">
                 <div class="dropdown order-2">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -55,9 +55,9 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Home</a></li>
-                        <li><a>About</a></li>
+                        <li><a>About us</a></li>
                         <li><a>Shop</a></li>
-                        <li><a>All-fruits</a></li>
+                        <li><a>All fruits</a></li>
                     </ul>
                 </div>
                 <div class="flex justify-center items-center order-1">
@@ -68,9 +68,9 @@
 
 
             <!-- navbar end /////////////////////////////////////////////////////////////////////// -->
-            <div class="hidden lg:flex">
+            <div class="navbar-end hidden lg:flex">
                 <div class="searchBar bg-white py-2 px-4 rounded-2xl flex justify-center items-center">
-                    <input class="h-4 outline-none w-[70%]" placeholder="search here" type="text">
+                    <input class="h-4 outline-none" placeholder="search here" type="text">
                     <button class="bg-transparent"><img class="h-4" src="./icons/icons8-search-50.png"
                             alt=""></button>
                 </div>
